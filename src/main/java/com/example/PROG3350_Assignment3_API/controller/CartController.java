@@ -30,7 +30,7 @@ public class CartController {
     }
 
     @DeleteMapping()
-    public ResponseEntity<?> emptyCart(@PathVariable("productId") int productId) { // ? for no type needed
+    public ResponseEntity<?> emptyCart() { // ? for no type needed
         unitOfWork.getCartService().emptyCart(ID);
         return ResponseEntity.noContent().build();
     }

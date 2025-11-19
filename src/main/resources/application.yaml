@@ -1,3 +1,17 @@
 spring:
   application:
     name: PROG3350_Assignment3_API
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  #  data
+#  server.port=8080
+
+  datasource:
+    url: jdbc:postgresql://dpg-d4b6ouer433s73969n7g-a.oregon-postgres.render.com/productsdb_p3m1?sslmode=require
+    username: productsdb_p3m1_user
+    password: mOSJAHemcKaAIJc0w5AA2SUDc2al5BRG
+    driver-class-name: org.postgresql.Driver
+    hikari.maximum-pool-size: 5
